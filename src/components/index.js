@@ -3,5 +3,6 @@ import Banner from './Banner';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contacts from './Contacts';
+import Footer from './Footer';
 
-export { NavBar, Banner, Skills, Projects, Contacts };
+export { NavBar, Banner, Skills, Projects, Contacts, Footer };

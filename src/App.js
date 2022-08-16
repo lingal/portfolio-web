@@ -1,4 +1,4 @@
-import { NavBar, Banner, Skills, Projects, Contacts } from './components';
+import { NavBar, Banner, Skills, Projects, Contacts, Footer } from './components';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,7 +9,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      <Contacts/>
+      <Contacts />
+      <Footer/>
     </div>
   );
 }
