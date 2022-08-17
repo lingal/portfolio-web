@@ -71,8 +71,8 @@ const NavBar = () => {
                 Projects
               </Nav.Link>
             </Nav>
-            <span className="navbar-text">      
-              <div className="social-icon">
+            <span className="navbar-text">
+              <div className="social-links">
                 <a href="#">
                   <img src={navIcon1} alt="" />
                 </a>

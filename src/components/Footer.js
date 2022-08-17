@@ -15,7 +15,7 @@ const Footer = () => {
             <img src={logo} alt="logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
+            <div className="social-links">
               <a href="#">
                 <img src={navIcon1} alt="icon" />
               </a>

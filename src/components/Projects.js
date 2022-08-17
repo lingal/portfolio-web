@@ -2,6 +2,8 @@ import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import { projects } from '../projects';
 import colorSharp2 from '../assets/img/color-sharp2.png';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 const Projects = () => {
   return (
@@ -9,11 +11,21 @@ const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              possimus, eaque atque similique optio laborum.
-            </p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? 'animate__animated animate__slideInDown' : ''
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias possimus, eaque atque similique optio laborum.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"

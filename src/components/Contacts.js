@@ -42,7 +42,6 @@ const Contacts = () => {
     }
   };
 
-  console.log({ ...formDetails });
   return (
     <section className="contact" id="connect">
       <Container>
@@ -52,7 +51,7 @@ const Contacts = () => {
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
@@ -94,7 +93,7 @@ const Contacts = () => {
                     }
                   />
                 </Col>
-                <Col>
+                <Col size={12} className="px-1">
                   <textarea
                     placeholder="Message"
                     value={formDetails.message}
@@ -103,7 +102,7 @@ const Contacts = () => {
                       onFormUpdate('message', event.target.value)
                     }
                   />
-                  <button type="submit" onClick={handleSubmit}>
+                  <button type="submit">
                     <span>{buttonText}</span>
                   </button>
                 </Col>
