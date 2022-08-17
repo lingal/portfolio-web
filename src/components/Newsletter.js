@@ -1,6 +1,6 @@
 import { Alert, Col, Row } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
-import e from 'cors';
+
 
 const Newsletter = ({ onValidated, status, message }) => {
   const [email, setEmail] = useState('');
@@ -9,7 +9,7 @@ const Newsletter = ({ onValidated, status, message }) => {
     if (status === 'success') clearFields();
   }, [status]);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     email &&
       email.indexOf('@') > -1 &&
@@ -34,7 +34,7 @@ const Newsletter = ({ onValidated, status, message }) => {
           </Col>
           <Col md={6} xl={7}>
             <form onSubmit={handleSubmit}>
-              <div className="new-email bx">
+              <div className="new-email-bx">
                 <input
                   type="email"
                   value={email}

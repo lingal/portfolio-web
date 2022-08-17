@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -244,6 +245,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
+  background-color: transparent;
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -599,3 +601,4 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+

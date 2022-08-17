@@ -58,7 +58,7 @@ const Banner = () => {
               corporis repellat alias. Laboriosam earum amet hic?
             </p>
             <button onClick={() => console.log('connect')}>
-              Let's connect <ArrowRightCircle />
+              Let's connect <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>

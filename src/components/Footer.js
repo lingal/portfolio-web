@@ -1,29 +1,29 @@
+import { Container, Row, Col } from 'react-bootstrap';
+import MailchimpForm from './MailchimpForm';
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import MailchimpForm from './MailchimpForm';
-import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <Container>
         <Row className="align-item-center">
-          <MailchimpForm/>
-          <Col sm={6}>
+          <MailchimpForm />
+          <Col size={12} sm={6}>
             <img src={logo} alt="logo" />
           </Col>
-          <Col sm={6} className="text-center text-sm-end">
+          <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="#">
-                <img src={navIcon1} alt="" />
+                <img src={navIcon1} alt="icon" />
               </a>
               <a href="#">
-                <img src={navIcon2} alt="" />
+                <img src={navIcon2} alt="icon" />
               </a>
               <a href="#">
-                <img src={navIcon3} alt="" />
+                <img src={navIcon3} alt="icon" />
               </a>
             </div>
             <p>CopyRight 2022. All Right Reserved</p>

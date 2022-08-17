@@ -5,7 +5,7 @@ import colorSharp2 from '../assets/img/color-sharp2.png';
 
 const Projects = () => {
   return (
-    <section className="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col>
